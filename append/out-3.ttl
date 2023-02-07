@@ -1,0 +1,7 @@
+@prefix fx:  <http://sparql.xyz/facade-x/ns/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xyz: <http://sparql.xyz/facade-x/data/> .
+
+<http://sparql.xyz/facade-x/data/append/3/2023-02-07T09:44:18.260+00:00>
+        xyz:key    "3"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        xyz:value  "C" .
