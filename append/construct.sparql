@@ -1,0 +1,16 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX xyz: <http://sparql.xyz/facade-x/data/>
+PREFIX fx:  <http://sparql.xyz/facade-x/ns/>
+
+construct {
+ ?subject xyz:key ?key ; 
+ 	xyz:value ?value .
+}
+where {
+	service <x-sparql-anything:> {
+		fx:properties fx:location "./data.json" .		
+		[] xyz:key ?_key_int ; xyz:value ?value .
+	}
+	BIND (?_key_int as ?key) .
+	BIND ( fx:entity(xyz:,"append/", ?key , "/" , STR(NOW()) ) as ?subject ) .
+}
