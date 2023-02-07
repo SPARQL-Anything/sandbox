@@ -1,0 +1,18 @@
+PREFIX ex: <http://example/> 
+PREFIX fx:  <http://sparql.xyz/facade-x/ns/>
+PREFIX xyz: <http://sparql.xyz/facade-x/data/>
+
+select ?s ?p ?o
+where {
+	SERVICE <x-sparql-anything:> {
+		SERVICE <x-sparql-anything:> {
+			fx:properties fx:content """{"aid": "Kate McKinnon", "url": "/Cast/?KaMc", "type": "cast"}
+{"aid": "Alex Moffat", "url": "/Cast/?AlMo", "type": "cast"}
+{"aid": "Ego Nwodim", "url": "/Cast/?EgNw", "type": "cast"}""" ; fx:media-type "text/plain" ; fx:txt.split "\n" .
+			[] fx:anySlot ?jsonLine
+		}
+		BIND (?jsonLine as ?json) .
+		fx:properties fx:content ?json ; fx:media-type "application/json" .
+		?s ?p ?o
+	}
+}

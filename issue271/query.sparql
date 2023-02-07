@@ -1,0 +1,13 @@
+PREFIX ex: <http://example/> 
+PREFIX fx:  <http://sparql.xyz/facade-x/ns/>
+PREFIX xyz: <http://sparql.xyz/facade-x/data/>
+
+CONSTRUCT {
+ ?bnode ex:p ?A
+} WHERE {
+ SERVICE <x-sparql-anything:> {
+	fx:properties fx:location "./data.csv" ; fx:csv.headers true .
+ 	[] xyz:c1 ?b0 ; xyz:c2 ?A
+ }
+ BIND ( BNODE ( ?b0 ) as ?bnode ) 
+}

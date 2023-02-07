@@ -1,0 +1,21 @@
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+CONSTRUCT {
+ ?item a rdf:List .
+ ?item rdf:first ?value .
+ ?item rdf:rest ?rest .
+} WHERE {
+#SELECT * WHERE {
+	SERVICE <x-sparql-anything:> {
+		fx:properties fx:location "./data.csv" .
+		?csv a fx:root .
+		?csv ?li ?item .
+		?item rdf:_1 ?value
+		OPTIONAL { ?csv ?li2 ?next . filter (fx:next(?li) = ?li2) }
+		BIND (IF(BOUND(?next), ?next, rdf:nil) AS ?rest )
+	}
+}

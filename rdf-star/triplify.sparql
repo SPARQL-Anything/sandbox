@@ -1,0 +1,17 @@
+PREFIX fx:  <http://sparql.xyz/facade-x/ns/>
+PREFIX xyz: <http://sparql.xyz/facade-x/data/>
+PREFIX dct: <http://purl.org/dc/terms/>
+
+CONSTRUCT {
+  ?x ?y ?z .
+  << ?x ?y ?z >>  dct:created ?now .
+  
+} WHERE {
+  SERVICE <x-sparql-anything:> {
+	  fx:properties fx:location "./1.json" ;
+	     fx:media-type "application/json"
+		 .
+	?x ?y ?z
+  }
+  BIND (NOW () as ?now )
+}
