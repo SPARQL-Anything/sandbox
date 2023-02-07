@@ -1,5 +1,5 @@
 # append
-This parameter tells the command line to now overwrite to an existing file but simply append to it. 
+This parameter tells the command line to not overwrite to an existing file but simply append to it. 
 Here we test the behaviour in different configurations.
 
 The following use case works nicely, multiple runs append to the same file:
