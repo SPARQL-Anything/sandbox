@@ -17,11 +17,11 @@ construct {
 } where {
 	# Step 2
     service <x-sparql-anything:media-type=application/json> {
-	  # Step 1
+	  # Step 1 inside!!!
 	  service <x-sparql-anything:> {
 	      bind(coalesce(?__file,".*") as ?pattern)
 	      fx:properties fx:location "./issue334.tar" .
-	      fx:properties fx:archive.matches ".*\\.[^\\.]*$".
+	      fx:properties fx:archive.matches ".*\\.[^\\.]*$" .
 	      [] fx:anySlot ?file
   	  }
       bind(str(bsdd:) as ?bsdd)
