@@ -1,0 +1,5 @@
+<items>
+    <item letter="A" />
+    <item letter="B" />
+    <item letter="C">Text here</item>
+</items>

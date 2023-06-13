@@ -1,0 +1,12 @@
+PREFIX fx:  <http://sparql.xyz/facade-x/ns/>
+PREFIX xyz: <http://sparql.xyz/facade-x/data/>
+
+CONSTRUCT {
+  ?x ?y ?z
+} WHERE {
+  SERVICE <x-sparql-anything:> {
+	  fx:properties fx:location ?_file ;
+	  fx:blank-nodes false . #;
+	?x ?y ?z
+  }
+}

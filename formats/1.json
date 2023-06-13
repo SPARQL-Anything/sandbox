@@ -1,0 +1,7 @@
+{
+	"boolean-field": true,
+	"integer-field": 123,
+	"string-field": "String here!!!",
+	"array-field": [1, true, "Ops!", {"objectKey": "val"}],
+	"object": {"field": "val"}
+}
