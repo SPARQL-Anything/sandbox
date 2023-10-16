@@ -1,0 +1,20 @@
+
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX fx:  <http://sparql.xyz/facade-x/ns/>
+PREFIX xyz: <http://sparql.xyz/facade-x/data/>
+
+
+select * where
+{
+    service <x-sparql-anything:> {
+        fx:properties fx:content """
+        key: value
+        key1: "value2"
+        another-key: 123
+        key1: "Repeated!"
+        """ ; fx:triplifier "io.github.sparqlanything.yaml.YAMLTriplifier".
+        
+        ?s ?p ?o
+    }
+}

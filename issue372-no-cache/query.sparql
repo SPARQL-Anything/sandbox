@@ -1,0 +1,21 @@
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+
+SELECT ?property ?value ?value2
+WHERE {
+  
+  SERVICE <x-sparql-anything:> {
+     ## Simulate a self join on a CSV file
+     SERVICE <x-sparql-anything:> {
+        fx:properties fx:location "./artist_data.csv" ; fx:no-cache false . # ?_nocache_xsd_boolean .
+        [] rdf:_3500 [ ?property ?value ] .
+     }
+     
+     fx:properties fx:location "./artist_data.csv" ; fx:no-cache false . #?_nocache_xsd_boolean .
+     [] fx:anySlot [ ?property ?value2 ] .
+  }
+  
+}
+# gtfs-experiments/datasets/csv/1000/

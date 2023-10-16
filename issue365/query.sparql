@@ -1,0 +1,12 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX xyz: <http://sparql.xyz/facade-x/data/>
+PREFIX fx:  <http://sparql.xyz/facade-x/ns/>
+SELECT  *
+WHERE
+  { SERVICE <x-sparql-anything:>
+      { fx:properties
+                  fx:command     "ls -lha | grep sparql" ; #"ps -ef | grep bash " ;
+                  fx:media-type  "text/plain" .
+        ?s        ?p             ?o
+      } 
+  }
