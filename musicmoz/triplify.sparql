@@ -1,0 +1,16 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX fx:  <http://sparql.xyz/facade-x/ns/>
+PREFIX xyz: <http://sparql.xyz/facade-x/data/>
+
+prefix html: <http://www.w3.org/1999/xhtml#>
+
+CONSTRUCT {
+	?s ?p ?o
+} where {
+	service <x-sparql-anything:> {
+		fx:properties fx:location "./musicmoz.bandsandartists.xml" ;
+			# xml has bad chars, we us the html triplifier instead
+			fx:media-type "text/html" .
+		?s ?p ?o
+	}
+}
