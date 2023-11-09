@@ -1,0 +1,92 @@
+@prefix eg:   <http://www.example.org/> .
+@prefix fx:   <http://sparql.xyz/facade-x/ns/> .
+@prefix qb:   <http://purl.org/linked-data/cube#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sdmx: <http://purl.org/linked-data/sdmx#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:  <http://sparql.xyz/facade-x/data/> .
+
+eg:example4  rdf:type   qb:Observation ;
+        <http://dd.eionet.europa.eu/vocabulary/eurostat/geo/>
+                "NL" ;
+        <http://dd.eionet.europa.eu/vocabulary/eurostat/ind_type/>
+                "F_Y16_74" ;
+        <http://dd.eionet.europa.eu/vocabulary/eurostat/indic_is/>
+                "I_DSK2_BAB" ;
+        <http://dd.eionet.europa.eu/vocabulary/eurostat/time/>
+                "2021-01-01"^^xsd:date ;
+        <http://dd.eionet.europa.eu/vocabulary/eurostat/unit/>
+                "PC_IND" ;
+        qb:dataSet      eg:tepsr_sp410 ;
+        eg:tepsr_sp410  "76.94" .
+
+eg:example2  rdf:type   qb:Observation ;
+        <http://dd.eionet.europa.eu/vocabulary/eurostat/geo/>
+                "IT" ;
+        <http://dd.eionet.europa.eu/vocabulary/eurostat/ind_type/>
+                "IND_TOTAL" ;
+        <http://dd.eionet.europa.eu/vocabulary/eurostat/indic_is/>
+                "I_DSK2_BAB" ;
+        <http://dd.eionet.europa.eu/vocabulary/eurostat/time/>
+                "2021-01-01"^^xsd:date ;
+        <http://dd.eionet.europa.eu/vocabulary/eurostat/unit/>
+                "PC_IND" ;
+        qb:dataSet      eg:tepsr_sp410 ;
+        eg:tepsr_sp410  "45.6" .
+
+eg:example5  rdf:type   qb:Observation ;
+        <http://dd.eionet.europa.eu/vocabulary/eurostat/geo/>
+                "NL" ;
+        <http://dd.eionet.europa.eu/vocabulary/eurostat/ind_type/>
+                "IND_TOTAL" ;
+        <http://dd.eionet.europa.eu/vocabulary/eurostat/indic_is/>
+                "I_DSK2_BAB" ;
+        <http://dd.eionet.europa.eu/vocabulary/eurostat/time/>
+                "2021-01-01"^^xsd:date ;
+        <http://dd.eionet.europa.eu/vocabulary/eurostat/unit/>
+                "PC_IND" ;
+        qb:dataSet      eg:tepsr_sp410 ;
+        eg:tepsr_sp410  "78.94" .
+
+eg:example3  rdf:type   qb:Observation ;
+        <http://dd.eionet.europa.eu/vocabulary/eurostat/geo/>
+                "IT" ;
+        <http://dd.eionet.europa.eu/vocabulary/eurostat/ind_type/>
+                "M_Y16_74" ;
+        <http://dd.eionet.europa.eu/vocabulary/eurostat/indic_is/>
+                "I_DSK2_BAB" ;
+        <http://dd.eionet.europa.eu/vocabulary/eurostat/time/>
+                "2021-01-01"^^xsd:date ;
+        <http://dd.eionet.europa.eu/vocabulary/eurostat/unit/>
+                "PC_IND" ;
+        qb:dataSet      eg:tepsr_sp410 ;
+        eg:tepsr_sp410  "48.16" .
+
+eg:example1  rdf:type   qb:Observation ;
+        <http://dd.eionet.europa.eu/vocabulary/eurostat/geo/>
+                "IT" ;
+        <http://dd.eionet.europa.eu/vocabulary/eurostat/ind_type/>
+                "F_Y16_74" ;
+        <http://dd.eionet.europa.eu/vocabulary/eurostat/indic_is/>
+                "I_DSK2_BAB" ;
+        <http://dd.eionet.europa.eu/vocabulary/eurostat/time/>
+                "2021-01-01"^^xsd:date ;
+        <http://dd.eionet.europa.eu/vocabulary/eurostat/unit/>
+                "PC_IND" ;
+        qb:dataSet      eg:tepsr_sp410 ;
+        eg:tepsr_sp410  "43.09" .
+
+eg:example6  rdf:type   qb:Observation ;
+        <http://dd.eionet.europa.eu/vocabulary/eurostat/geo/>
+                "NL" ;
+        <http://dd.eionet.europa.eu/vocabulary/eurostat/ind_type/>
+                "M_Y16_74" ;
+        <http://dd.eionet.europa.eu/vocabulary/eurostat/indic_is/>
+                "I_DSK2_BAB" ;
+        <http://dd.eionet.europa.eu/vocabulary/eurostat/time/>
+                "2021-01-01"^^xsd:date ;
+        <http://dd.eionet.europa.eu/vocabulary/eurostat/unit/>
+                "PC_IND" ;
+        qb:dataSet      eg:tepsr_sp410 ;
+        eg:tepsr_sp410  "80.94" .

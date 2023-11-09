@@ -1,0 +1,25 @@
+# p == "geo" ~ "http://dd.eionet.europa.eu/vocabulary/eurostat/geo/",
+#     p == "ind_type" ~ "http://dd.eionet.europa.eu/vocabulary/eurostat/ind_type/",
+#     p == "indic_is" ~ "http://dd.eionet.europa.eu/vocabulary/eurostat/indic_is/",
+#     p == "time" ~ "http://dd.eionet.europa.eu/vocabulary/eurostat/time/",
+#     p == "unit" ~ "http://dd.eionet.europa.eu/vocabulary/eurostat/unit/",
+
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+PREFIX qb:   <http://purl.org/linked-data/cube#>
+
+SELECT * 
+WHERE {
+    SERVICE <x-sparql-anything:> {
+        fx:properties fx:location "wide_sample.csv" ; fx:csv.headers true .
+        [] xyz:geo ?geo ;
+            xyz:ind_type ?ind_type ;
+            xyz:time ?time ;
+            xyz:unit ?unit
+            .
+            
+        
+    }
+}

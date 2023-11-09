@@ -1,0 +1,40 @@
+# p == "geo" ~ "http://dd.eionet.europa.eu/vocabulary/eurostat/geo/",
+#     p == "ind_type" ~ "http://dd.eionet.europa.eu/vocabulary/eurostat/ind_type/",
+#     p == "indic_is" ~ "http://dd.eionet.europa.eu/vocabulary/eurostat/indic_is/",
+#     p == "time" ~ "http://dd.eionet.europa.eu/vocabulary/eurostat/time/",
+#     p == "unit" ~ "http://dd.eionet.europa.eu/vocabulary/eurostat/unit/",
+
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+PREFIX xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX sdmx: <http://purl.org/linked-data/sdmx#>
+PREFIX qb:   <http://purl.org/linked-data/cube#>
+PREFIX eg: <http://www.example.org/>
+
+CONSTRUCT {
+    ?observation a qb:Observation ;
+        qb:dataSet  eg:tepsr_sp410  ;
+        <http://dd.eionet.europa.eu/vocabulary/eurostat/geo/> ?geo ;
+        <http://dd.eionet.europa.eu/vocabulary/eurostat/indic_is/> ?indic_is ;
+        <http://dd.eionet.europa.eu/vocabulary/eurostat/ind_type/> ?ind_type ;
+        <http://dd.eionet.europa.eu/vocabulary/eurostat/time/> ?time_lt ;
+        <http://dd.eionet.europa.eu/vocabulary/eurostat/unit/> ?unit ;
+         eg:tepsr_sp410 ?values
+        
+} WHERE {
+    SERVICE <x-sparql-anything:> {
+        fx:properties fx:location "wide_sample.csv" ; fx:csv.headers true .
+        []    xyz:rowid ?row ;
+            xyz:indic_is ?indic_is ;
+            xyz:ind_type ?ind_type ;
+            xyz:unit ?unit ;
+            xyz:geo ?geo ;
+            xyz:time ?time ;
+            xyz:values ?values
+    }
+    # See https://sparql-anything.readthedocs.io/en/latest/FUNCTIONS_AND_MAGIC_PROPERTIES/#fxentity 
+    BIND (fx:entity(eg:,?row) AS ?observation) .
+    BIND (fx:literal(?time, xsd:date) AS ?time_lt)
+}
