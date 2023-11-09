@@ -5,4 +5,4 @@
 ```bash
 $ fx -q queries/example_wide_construct.sparql -o example_wide.ttl
 $ fx -q queries/example_wide_select.sparql -o example_wide.cs
-```v
+```
