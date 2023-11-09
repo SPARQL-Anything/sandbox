@@ -36,5 +36,6 @@ CONSTRUCT {
     }
     # See https://sparql-anything.readthedocs.io/en/latest/FUNCTIONS_AND_MAGIC_PROPERTIES/#fxentity 
     BIND (fx:entity(eg:,?row) AS ?observation) .
+    # See https://sparql-anything.readthedocs.io/en/latest/FUNCTIONS_AND_MAGIC_PROPERTIES/#fxliteral 
     BIND (fx:literal(?time, xsd:date) AS ?time_lt)
 }
