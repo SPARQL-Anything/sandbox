@@ -1,0 +1,119 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "id": "tcl_sytral.tcllignebus_2_0_0.C4-1",
+            "geometry": {
+                "type": "MultiLineString",
+                "coordinates": [
+                    [
+                        [
+                            4.84213733,
+                            45.74561994
+                        ],
+                        [
+                            4.84198449,
+                            45.74535432
+                        ],
+                        [
+                            4.84203846,
+                            45.74531134
+                        ],
+                        [
+                            4.84238282,
+                            45.74521409
+                        ]
+                    ]
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "ligne": "C4",
+                "code_trace": "C4-1",
+                "code_ligne": "C4A",
+                "type_trace": "NOM",
+                "nom_trace": "Jean Macé - Cité Internationale Centre de Congrès",
+                "sens": "Aller",
+                "origine": "10593",
+                "destination": "11792",
+                "nom_origine": "Jean Macé",
+                "nom_destination": "Cité Internationale",
+                "famille_transport": "BUS",
+                "date_debut": "20180101",
+                "date_fin": null,
+                "code_type_ligne": "REG",
+                "nom_type_ligne": "Régulière",
+                "pmr": true,
+                "code_tri_ligne": "C  4",
+                "nom_version": "Mars_2024",
+                "last_update": "2024-03-14T16:49:38+01:00",
+                "last_update_fme": "2024-03-20T06:00:19.056+01:00",
+                "gid": 357
+            },
+            "bbox": [
+                4.84198449,
+                45.74521409,
+                4.85679521,
+                45.78469769
+            ]
+        },
+        {
+            "type": "Feature",
+            "id": "tcl_sytral.tcllignebus_2_0_0.C4-2",
+            "geometry": {
+                "type": "MultiLineString",
+                "coordinates": [
+                    [
+                        [
+                            4.84213554,
+                            45.74561682
+                        ],
+                        [
+                            4.84270835,
+                            45.74661155
+                        ],
+                        [
+                            4.84312831,
+                            45.74732425
+                        ],
+                        [
+                            4.84365184,
+                            45.74821879
+                        ]
+                    ]
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "ligne": "C4",
+                "code_trace": "C4-2",
+                "code_ligne": "C4A",
+                "type_trace": "NOM",
+                "nom_trace": "Cité Internationale Centre de Congrès - Jean Macé",
+                "sens": "Retour",
+                "origine": "11792",
+                "destination": "10593",
+                "nom_origine": "Cité Internationale",
+                "nom_destination": "Jean Macé",
+                "famille_transport": "BUS",
+                "date_debut": "20180101",
+                "date_fin": null,
+                "code_type_ligne": "REG",
+                "nom_type_ligne": "Régulière",
+                "pmr": true,
+                "code_tri_ligne": "C  4",
+                "nom_version": "Mars_2024",
+                "last_update": "2024-03-14T16:49:38+01:00",
+                "last_update_fme": "2024-03-20T06:00:19.057+01:00",
+                "gid": 358
+            },
+            "bbox": [
+                4.84213554,
+                45.74561682,
+                4.85738663,
+                45.78471602
+            ]
+        }
+    ]
+}

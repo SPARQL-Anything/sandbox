@@ -1,0 +1,17 @@
+PREFIX fx: <http://sparql.xyz/facade-x/ns/>
+PREFIX xyz: <http://sparql.xyz/facade-x/data/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX geo: <http://www.opengis.net/ont/geosparql#>
+PREFIX geof: <http://www.opengis.net/def/function/geosparql/>
+
+SELECT ?l_id ?lyon_lat ?lyon_long
+WHERE {
+  SERVICE <x-sparql-anything:lyon_bus_short.json> {
+    []  xyz:type ?type ;
+        xyz:features/fx:anySlot 
+        	[xyz:id ?lyon_id ;
+          xyz:geometry/xyz:coordinates/fx:anySlot/fx:anySlot [rdf:_1 ?lyon_lat; rdf:_2 ?lyon_long]].
+  }
+  BIND (IRI(CONCAT("http://lyonbus.com/", ?lyon_id )) AS ?l_id).
+}
