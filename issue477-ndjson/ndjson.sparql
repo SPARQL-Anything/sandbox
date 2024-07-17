@@ -1,0 +1,32 @@
+PREFIX fx: <http://sparql.xyz/facade-x/ns/>
+PREFIX xyz: <http://sparql.xyz/facade-x/data/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix ex: <https://www.example.com/>
+
+construct {
+?business a ex:BusinessPlace ;
+          ex:address ?address ;
+          ex:name ?name.
+}
+
+where {
+  service <x-sparql-anything:> {
+    service <x-sparql-anything:> {
+
+        fx:properties fx:location "example.json" ;
+                      fx:media-type  "text/plain" ; fx:txt.split "\n" .
+            [] fx:anySlot ?line
+    }
+    BIND( ?line as ?json )
+    fx:properties fx:content ?json ;
+                  fx:media-type  "application/json" .
+
+        ?root   rdf:type fx:root ;
+                xyz:address ?address ;
+                xyz:name ?name ;
+                xyz:business_id ?business_id
+
+        BIND(iri(concat(str(ex:), encode_for_uri(?business_id))) AS ?business)
+    }
+}
