@@ -1,0 +1,21 @@
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX xyz: <http://sparql.xyz/facade-x/data/>
+
+
+select distinct ?term ?termType {
+
+        service <x-sparql-anything:> {
+            fx:properties fx:location "https://raw.githubusercontent.com/MarcoR1791/PhD/refs/heads/main/code/data/artist_data.csv?token=GHSAT0AAAAAAC3Z364DVPXWAB6XZ4BSEQAAZ4XODKQ" ;           fx:csv.headers true ;
+            fx:media-type "text/csv" .
+            
+            { [] a ?term . filter (StrStarts(str(?term), str(xyz:))) . bind("type" as ?termType) }
+            UNION
+            { [] ?term []. filter (StrStarts(str(?term), str(xyz:))) . bind("slotString" as ?termType) }
+#            UNION
+#            { [] ?term [] . filter (StrStarts(str(?term), str(rdf:))) . bind("slotNumber" as ?termType) }
+            
+        }
+}
