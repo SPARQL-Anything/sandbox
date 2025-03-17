@@ -1,0 +1,58 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX afn:  <http://jena.apache.org/ARQ/function#>
+
+SELECT ?term ?label ?type ?domain ?range
+WHERE
+{
+    {  # OWL ONTOLOGY CLASSES AND PROPERTIES
+        ?term a owl:Class .
+            OPTIONAL { ?term rdfs:label ?label_ }
+        BIND ( 'class' AS ?type )
+    }
+    UNION
+    {
+        ?term a owl:ObjectProperty .
+            OPTIONAL { ?term rdfs:label ?label_ }
+            OPTIONAL { ?term rdfs:domain ?domain_ }
+            OPTIONAL { ?term rdfs:range ?range_ }
+        BIND ( 'property' AS ?type )
+    }
+    UNION
+    {
+        ?term a owl:DatatypeProperty .
+            OPTIONAL { ?term rdfs:label ?label_ }
+            OPTIONAL { ?term rdfs:domain ?domain_ }
+            OPTIONAL { ?term rdfs:range ?range_ }
+        BIND ( 'datatype' AS ?type )
+    }
+    UNION
+    {
+        ?term a owl:AnnotationProperty .
+            OPTIONAL { ?term rdfs:label ?label_ }
+            OPTIONAL { ?term rdfs:domain ?domain_ }
+            OPTIONAL { ?term rdfs:range ?range_ }
+        BIND ( 'property' AS ?type )
+    }
+ 
+    # Defaults
+    BIND (
+        IF (
+            BOUND(?label_), ?label_, afn:localname(?term)
+        ) as ?label
+    )
+    BIND (
+        IF (
+            BOUND(?domain_), 
+                IF( isBLANK(?domain_), rdfs:Resource, ?domain_), rdfs:Resource
+        ) as ?domain
+    )
+    BIND (
+        IF (
+            BOUND(?range_) , 
+                IF( isBLANK(?range_), rdfs:Resource, ?range_), rdfs:Resource
+        ) as ?range
+    )
+
+}
