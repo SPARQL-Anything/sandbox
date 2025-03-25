@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<something>
+	<root attr2="100.0" id="123" >
+	  <child>1</child>
+	</root>
+	<root id="456" attr2="200.0">
+	  <child>1</child>
+	</root>
+	<root first="f1" second="s2" third="t3">
+	  <child>1</child>
+	</root>
+	<root first="f1" second="s2" third="t3"/>
+</something>

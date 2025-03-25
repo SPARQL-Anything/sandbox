@@ -1,0 +1,17 @@
+PREFIX fx: <http://sparql.xyz/facade-x/ns/>
+PREFIX xyz: <http://sparql.xyz/facade-x/data/>
+PREFIX ex: <http://example.org/>
+
+CONSTRUCT {
+  ?s ?p ?o .
+}
+WHERE { 
+  SERVICE <x-sparql-anything:> { 
+    fx:properties
+      fx:xml.path     "//root" ;
+      fx:location     ?_location ; # local path to the xml-file
+    .
+
+    ?s ?p ?o .
+  }
+}
