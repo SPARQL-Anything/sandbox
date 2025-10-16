@@ -1,0 +1,175 @@
+{
+	"id": "ocds-70d2nz-61b416f1-e0bc-48c8-aece-8aabf099875a-2024-01-12T00:00:00.000Z",
+	"tag": [
+		"compiled"
+	],
+	"bids": {
+		"url": "https://raw.githubusercontent.com/open-contracting/ocds_bid_extension/v1.1.1/extension.json",
+		"details": [
+			{
+				"id": "bid-1",
+				"value": {
+					"amount": 69999.96,
+					"currency": "EUR"
+				},
+				"tenderers": [
+					{
+						"id": "EU_body_72f45eb0558c9146db50fe9e58a46486d606a508fa69cc54894a3e0c88b163f0",
+						"name": "UAB „Arbor Medical Corporation LT“"
+					}
+				],
+				"relatedLots": [
+					"lot-1"
+				]
+			}
+		],
+		"statistics": [
+			{
+				"id": "statistic-1",
+				"value": 1,
+				"measure": "electronicBids",
+				"relatedLot": "lot-1"
+			},
+			{
+				"id": "statistic-2",
+				"value": 1,
+				"measure": "smeBids",
+				"relatedLot": "lot-1"
+			}
+		]
+	},
+	"date": "2024-01-12T00:00:00.000Z",
+	"ocid": "ocds-70d2nz-61b416f1-e0bc-48c8-aece-8aabf099875a",
+	"buyer": {
+		"id": "EU_body_885a812f0620b1af22dee5a1ca873113f17e08d80eeb868ca6c4c53e8889c66e",
+		"name": "Viešoji įstaiga Alytaus apskrities S. Kudirkos ligoninė"
+	},
+	"awards": [
+		{
+			"id": "award-1",
+			"date": "2024-01-05T00:00:00.000Z",
+			"items": [
+				{
+					"id": "item-2",
+					"relatedLot": "lot-1",
+					"classification": {
+						"id": "50421000",
+						"scheme": "CPV"
+					}
+				}
+			],
+			"value": {
+				"amount": 69999.96,
+				"currency": "EUR"
+			},
+			"documents": [
+				{
+					"id": "document-1",
+					"url": "https://ted.europa.eu/udl?uri=TED:NOTICE:021908-2024:TEXT:EN:HTML",
+					"language": "lt",
+					"documentType": "awardNotice",
+					"datePublished": "2024-01-12T00:00:00.000Z"
+				}
+			],
+			"suppliers": [
+				{
+					"id": "EU_body_72f45eb0558c9146db50fe9e58a46486d606a508fa69cc54894a3e0c88b163f0",
+					"name": "UAB „Arbor Medical Corporation LT“"
+				}
+			],
+			"relatedBid": "bid-1",
+			"relatedLots": [
+				"lot-1"
+			]
+		}
+	],
+	"tender": {
+		"id": "2024/S 9-021908",
+		"lots": [
+			{
+				"id": "lot-1",
+				"url": "https://raw.githubusercontent.com/open-contracting/ocds_lots_extension/v1.1.1/extension.json",
+				"title": "MAGNETINIO REZONANSO TECHNINĖS PRIEŽIŪROS, TECHNINĖS BŪKLĖS TIKRINIMO IR REMONTO PASLAUGOS",
+				"description": "Magnetinio rezonanso techninės priežiūros, techninės būklės tikrinimo ir remonto paslaugos su įskaičiuotu detalių bei eksploatacinių medžiagų tiekimu."
+			}
+		],
+		"items": [
+			{
+				"id": "item-1",
+				"classification": {
+					"id": "50421000",
+					"scheme": "CPV"
+				}
+			},
+			{
+				"id": "item-2",
+				"relatedLot": "lot-1",
+				"classification": {
+					"id": "50421000",
+					"scheme": "CPV"
+				}
+			}
+		],
+		"title": "MAGNETINIO REZONANSO TECHNINĖS PRIEŽIŪROS, TECHNINĖS BŪKLĖS TIKRINIMO IR REMONTO PASLAUGOS",
+		"description": "Magnetinio rezonanso techninės priežiūros, techninės būklės tikrinimo ir remonto paslaugos su įskaičiuotu detalių bei eksploatacinių medžiagų tiekimu.",
+		"awardCriteria": "priceOnly",
+		"procurementMethod": "direct",
+		"awardCriteriaDetails": "PRICE: 100",
+		"mainProcurementCategory": "services",
+		"procurementMethodDetails": "pt_award_contract_without_call"
+	},
+	"parties": [
+		{
+			"id": "EU_body_885a812f0620b1af22dee5a1ca873113f17e08d80eeb868ca6c4c53e8889c66e",
+			"name": "Viešoji įstaiga Alytaus apskrities S. Kudirkos ligoninė",
+			"roles": [
+				"buyer"
+			],
+			"address": {
+				"street": "Ligoninės g. 12",
+				"postalCode": "62114",
+				"countryName": "LT"
+			},
+			"contactPoint": {
+				"url": "http://www.ligonine.lt",
+				"name": "Janina Šileikienė",
+				"email": "sileikiene@ligonine.lt",
+				"telephone": "+370 31556315"
+			},
+			"additionalIdentifiers": [
+				{
+					"id": "190272175",
+					"scheme": "ORGANIZATION_ID"
+				}
+			]
+		},
+		{
+			"id": "EU_body_72f45eb0558c9146db50fe9e58a46486d606a508fa69cc54894a3e0c88b163f0",
+			"name": "UAB „Arbor Medical Corporation LT“",
+			"roles": [
+				"supplier"
+			],
+			"address": {
+				"street": "Nemuno g. 25 / Smalininkų g. 11-1A",
+				"postalCode": "LT-44295",
+				"countryName": "LT"
+			},
+			"contactPoint": {
+				"url": "http://www.arborlt.lt",
+				"email": "laura@arborlt.lt",
+				"telephone": "+370 37464460"
+			},
+			"additionalIdentifiers": [
+				{
+					"id": "301577716",
+					"scheme": "ORGANIZATION_ID"
+				}
+			]
+		}
+	],
+	"language": "lt",
+	"metaData": {
+		"modified": "2024-02-11T16:44:29.833682"
+	},
+	"initiationType": "tender"
+}

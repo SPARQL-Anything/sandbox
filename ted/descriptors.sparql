@@ -1,0 +1,25 @@
+PREFIX fx: <http://sparql.xyz/facade-x/ns/>
+        PREFIX xyz: <http://sparql.xyz/facade-x/data/>
+        PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+ 
+
+SELECT DISTINCT ?descriptor
+    WHERE {
+      SERVICE <x-sparql-anything:> {
+         fx:properties fx:location "sample.json" .
+        {
+            ?s ?p ?o .
+            BIND( ?p AS ?descriptor )
+        }
+        UNION
+        {
+            ?s a ?type .
+            BIND( ?type AS ?descriptor )
+        }
+      }
+      FILTER (
+        !fx:isContainerMembershipProperty(?descriptor)
+        &&
+        ?descriptor != rdf:type
+      )
+}
