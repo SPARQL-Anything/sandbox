@@ -1,0 +1,144 @@
+{
+    "trainNumber": "01209",
+    "trainName": "NGP PUNE SF SPL",
+    "route": "NAGPUR to PUNE JN",
+    "runningDays": {
+        "SUN": false,
+        "MON": false,
+        "TUE": false,
+        "WED": false,
+        "THU": false,
+        "FRI": false,
+        "SAT": true
+    },
+    "trainRoute": [
+        {
+            "sno": "1",
+            "stationName": "NAGPUR - NGP",
+            "arrives": "Source",
+            "departs": "19:40",
+            "distance": "0 kms",
+            "day": "1"
+        },
+        {
+            "sno": "2",
+            "stationName": "WARDHA JN - WR",
+            "arrives": "20:50",
+            "departs": "20:52",
+            "distance": "79 kms",
+            "day": "1"
+        },
+        {
+            "sno": "3",
+            "stationName": "DHAMANGAON - DMN",
+            "arrives": "21:28",
+            "departs": "21:30",
+            "distance": "129 kms",
+            "day": "1"
+        },
+        {
+            "sno": "4",
+            "stationName": "BADNERA JN - BD",
+            "arrives": "22:25",
+            "departs": "22:27",
+            "distance": "175 kms",
+            "day": "1"
+        },
+        {
+            "sno": "5",
+            "stationName": "AKOLA JN - AK",
+            "arrives": "23:48",
+            "departs": "23:50",
+            "distance": "253 kms",
+            "day": "1"
+        },
+        {
+            "sno": "6",
+            "stationName": "SHEGAON - SEG",
+            "arrives": "00:23",
+            "departs": "00:25",
+            "distance": "291 kms",
+            "day": "2"
+        },
+        {
+            "sno": "7",
+            "stationName": "MALKAPUR - MKU",
+            "arrives": "01:18",
+            "departs": "01:20",
+            "distance": "343 kms",
+            "day": "2"
+        },
+        {
+            "sno": "8",
+            "stationName": "BHUSAVAL JN - BSL",
+            "arrives": "02:20",
+            "departs": "02:25",
+            "distance": "393 kms",
+            "day": "2"
+        },
+        {
+            "sno": "9",
+            "stationName": "JALGAON JN - JL",
+            "arrives": "02:45",
+            "departs": "02:47",
+            "distance": "417 kms",
+            "day": "2"
+        },
+        {
+            "sno": "10",
+            "stationName": "MANMAD JN - MMR",
+            "arrives": "04:50",
+            "departs": "04:55",
+            "distance": "577 kms",
+            "day": "2"
+        },
+        {
+            "sno": "11",
+            "stationName": "KOPARGAON - KPG",
+            "arrives": "05:33",
+            "departs": "05:35",
+            "distance": "619 kms",
+            "day": "2"
+        },
+        {
+            "sno": "12",
+            "stationName": "BELAPUR - BAP",
+            "arrives": "06:18",
+            "departs": "06:20",
+            "distance": "663 kms",
+            "day": "2"
+        },
+        {
+            "sno": "13",
+            "stationName": "AHMADNAGAR - ANG",
+            "arrives": "07:38",
+            "departs": "07:40",
+            "distance": "730 kms",
+            "day": "2"
+        },
+        {
+            "sno": "14",
+            "stationName": "DAUND CHORD LINE - DDCC",
+            "arrives": "09:58",
+            "departs": "10:00",
+            "distance": "811 kms",
+            "day": "2"
+        },
+        {
+            "sno": "15",
+            "stationName": "URULI - URI",
+            "arrives": "10:33",
+            "departs": "10:35",
+            "distance": "856 kms",
+            "day": "2"
+        },
+        {
+            "sno": "16",
+            "stationName": "PUNE JN - PUNE",
+            "arrives": "11:25",
+            "departs": "Destination",
+            "distance": "884 kms",
+            "day": "2"
+        }
+    ]
+}
