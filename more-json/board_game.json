@@ -1,0 +1,182 @@
+{
+    "row_id": 1,
+    "description": "Build networks, grow industries, and navigate the world of the Industrial Revolution.",
+    "player_counts": {
+        "min_players": 2,
+        "max_players": 4
+    },
+    "playtime": {
+        "min_playtime": 60,
+        "max_playtime": 120
+    },
+    "boardgame": "Brass: Birmingham",
+    "minimum_age": 14,
+    "game_info": {
+        "release_year": 2018,
+        "categories": [
+            "Age of Reason",
+            "Economic",
+            "Industry / Manufacturing",
+            "Post-Napoleonic",
+            "Trains",
+            "Transportation"
+        ],
+        "mechanisms": [
+            "Chaining",
+            "End Game Bonuses",
+            "Hand Management",
+            "Income",
+            "Loans",
+            "Market",
+            "Multi-Use Cards",
+            "Network and Route Building",
+            "Ownership",
+            "Tags",
+            "Tech Trees / Tech Tracks",
+            "Tile Placement",
+            "Turn Order: Stat-Based",
+            "Variable Set-up"
+        ],
+        "family": [
+            "Cities: Birmingham (England)",
+            "Components: Map (Regional scale)",
+            "Components: Multi-Use Cards",
+            "Country: England",
+            "Country: United Kingdom",
+            "Crowdfunding: Kickstarter",
+            "Crowdfunding: Spieleschmiede",
+            "Digital Implementations: Steam",
+            "Digital Implementations: Tabletopia",
+            "Digital Implementations: VASSAL",
+            "Food & Drink: Beer",
+            "Game: Brass",
+            "History: Industrial Revolution",
+            "Misc: LongPack Games",
+            "Misc: Watch It Played How To Videos",
+            "Occupation: Engineer",
+            "Organizations: The Game Artisans of Canada",
+            "Theme: Canals"
+        ]
+    },
+    "credits": {
+        "designers": [
+            "Gavan Brown",
+            "Matt Tolman",
+            "Martin Wallace"
+        ],
+        "solo_designer": null,
+        "artists": [
+            "Gavan Brown",
+            "Lina Cossette",
+            "David Forest",
+            "Gui Landgraf",
+            "Damien Mammoliti",
+            "Matt Tolman"
+        ],
+        "publishers": [
+            "Roxley",
+            "Arclight Games",
+            "Board Game Rookie",
+            "BoardM Factory",
+            "CMON Global Limited",
+            "Conclave Editora",
+            "CoolPlay",
+            "CrowD Games",
+            "Dexker Games",
+            "Funforge",
+            "Gém Klub Kft.",
+            "Ghenos Games",
+            "Giant Roc",
+            "Lanlalen",
+            "Lord of Boards",
+            "Maldito Games",
+            "PHALANX",
+            "Rebel Sp. z o.o.",
+            "TLAMA games",
+            "White Goblin Games",
+            "盒拍工作室 Hepa Studio"
+        ],
+        "developer": null,
+        "graphic_designer": null,
+        "sculptor": null,
+        "editor": null,
+        "writer": null,
+        "insert_designer": null
+    },
+    "game_stats": {
+        "average_rating": "8.575",
+        "num_of_ratings": 53548,
+        "std_deviation": "1.42",
+        "weight": 3.87,
+        "comments": 7358,
+        "fans": 6726,
+        "page_views": 5555379
+    },
+    "ranks": {
+        "overall": 1,
+        "strategy": 1
+    },
+    "play_stats": {
+        "all_time_plays": 152594,
+        "this_month_plays": 1208
+    },
+    "collection_stats": {
+        "own": 76201,
+        "previously_owned": 3420,
+        "for_trade": 278,
+        "want_in_trade": 1758,
+        "wishlist": 20334
+    },
+    "ratings": {
+        "rated_1": 361,
+        "rated_2": 147,
+        "rated_3": 246,
+        "rated_4": 310,
+        "rated_5": 628,
+        "rated_6": 1700,
+        "rated_7": 4500,
+        "rated_8": 12000,
+        "rated_9": 18000,
+        "rated_10": 15000
+    },
+    "marketplace": [
+        {
+            "store": "Suggested retail",
+            "base_price": 79.99,
+            "currency": "USD",
+            "base_price_usd": 79.99
+        },
+        {
+            "store": "Amazon",
+            "base_price": 69.95,
+            "currency": "USD",
+            "base_price_usd": 69.95
+        },
+        {
+            "store": "BoardGameBliss",
+            "base_price": 135.0,
+            "currency": "CAD",
+            "base_price_usd": 97.15
+        },
+        {
+            "store": "Philibert",
+            "base_price": 62.95,
+            "currency": "EUR",
+            "base_price_usd": 73.15
+        },
+        {
+            "store": "Zatu Games",
+            "base_price": 68.99,
+            "currency": "GBP",
+            "base_price_usd": 92.66
+        },
+        {
+            "store": "eBay",
+            "base_price": 13.81,
+            "currency": "USD",
+            "base_price_usd": 13.81
+        }
+    ],
+    "link_to_game": "https://boardgamegeek.com/boardgame/224517/brass-birmingham",
+    "amazon_price": 69.95
+}
