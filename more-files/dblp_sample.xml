@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE dblp SYSTEM "dblp.dtd">
+<dblp>
+<incollection mdate="2017-07-12" key="reference/vision/X14bd" publtype="encyclopedia">
+<title>Curvedness.</title>
+<pages>159</pages>
+<year>2014</year>
+<booktitle>Computer Vision, A Reference Guide</booktitle>
+<ee>https://doi.org/10.1007/978-0-387-31439-6_100117</ee>
+<url>db/reference/vision/vision2014.html#X14bd</url>
+</incollection>
+<incollection mdate="2020-03-11" key="reference/vision/SrivastavaPKTA14" publtype="encyclopedia">
+<author>Gaurav Srivastava 0004</author>
+<author>Johnny Park</author>
+<author>Avinash C. Kak</author>
+<author>Birgi Tamersoy</author>
+<author>J. K. Aggarwal</author>
+<title>Multi-camera Human Action Recognition.</title>
+<pages>501-511</pages>
+<year>2014</year>
+<booktitle>Computer Vision, A Reference Guide</booktitle>
+<ee>https://doi.org/10.1007/978-0-387-31439-6_776</ee>
+<url>db/reference/vision/vision2014.html#SrivastavaPKTA14</url>
+</incollection>
+</dblp>

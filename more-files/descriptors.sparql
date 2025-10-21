@@ -6,7 +6,7 @@ PREFIX fx: <http://sparql.xyz/facade-x/ns/>
 SELECT DISTINCT ?term
     WHERE {
       SERVICE <x-sparql-anything:> {
-         fx:properties fx:location "train.json" .
+         fx:properties fx:location "d32374-59587.json" .
         {
             ?s ?p ?o .
             BIND( ?p AS ?descriptor )
