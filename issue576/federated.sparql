@@ -1,0 +1,20 @@
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+
+SELECT ?entity ?series
+WHERE {
+    SERVICE <x-sparql-anything:https://sparql-anything.cc/example1.json> {
+        ?tvSeries xyz:name ?seriesName .
+        ?tvSeries xyz:stars ?star .
+        ?star fx:anySlot "Courteney Cox" .
+    }
+    
+    BIND (STRLANG(?seriesName,"en") AS ?series)
+    
+    LATERAL {
+        SERVICE <https://query.wikidata.org/sparql> {
+          ?entity rdfs:label ?series
+        }
+    }
+}
