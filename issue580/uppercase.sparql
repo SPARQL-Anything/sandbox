@@ -1,0 +1,10 @@
+PREFIX fx:  <http://sparql.xyz/facade-x/ns/>
+PREFIX xyz: <http://sparql.xyz/facade-x/data/>
+
+select *
+where {
+    service <x-sparql-anything:> {
+        fx:properties fx:location "books.XML" .
+    }
+    ?s ?p ?o
+}
