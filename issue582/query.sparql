@@ -1,0 +1,14 @@
+PREFIX fx:  <http://sparql.xyz/facade-x/ns/>
+PREFIX xyz: <http://sparql.xyz/facade-x/data/>
+
+CONSTRUCT {
+
+?s ?p ?o
+} where {
+ service <x-sparql-anything:> {
+     fx:properties fx:location "file.xml" ;
+         fx:xml.path "//switchIS" ;
+         fx:blank-nodes true . 
+     ?s ?p ?o
+ }
+}

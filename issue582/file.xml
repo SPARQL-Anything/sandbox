@@ -1,0 +1,5 @@
+<switchesIS>
+    <switchIS id="1">
+     <name label="A" language="en" description="My first switch"/>
+    </switchIS>
+</switchesIS>
