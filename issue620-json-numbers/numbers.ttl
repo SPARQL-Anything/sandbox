@@ -1,0 +1,18 @@
+[ a       <http://sparql.xyz/facade-x/ns/root>;
+  <http://sparql.xyz/facade-x/data/a>
+          "1"^^<http://www.w3.org/2001/XMLSchema#int>;
+  <http://sparql.xyz/facade-x/data/bool>
+          true;
+  <http://sparql.xyz/facade-x/data/boolf>
+          false;
+  <http://sparql.xyz/facade-x/data/enot>
+          "1.0"^^<http://www.w3.org/2001/XMLSchema#double>;
+  <http://sparql.xyz/facade-x/data/float>
+          "0.1"^^<http://www.w3.org/2001/XMLSchema#double>;
+  <http://sparql.xyz/facade-x/data/neg>
+          "-1"^^<http://www.w3.org/2001/XMLSchema#int>;
+  <http://sparql.xyz/facade-x/data/string>
+          "string";
+  <http://sparql.xyz/facade-x/data/zero>
+          "0"^^<http://www.w3.org/2001/XMLSchema#int>
+] .
